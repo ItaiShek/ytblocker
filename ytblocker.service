@@ -1,0 +1,19 @@
+[Unit]
+Description=YouTube blocker extention service to pi hole
+
+[Service]
+ExecStart=/opt/ytblocker/ytblocker
+# Required on some systems
+WorkingDirectory=/opt/ytblocker
+Restart=always
+# Restart service after 10 seconds if the service crashes
+RestartSec=10
+# Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ytblocker
+#User=<alternate user>
+#Group=<alternate group>
+
+[Install]
+WantedBy=multi-user.target
