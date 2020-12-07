@@ -1,5 +1,5 @@
 [Unit]
-Description=YouTube blocker extention service to pi hole
+Description=YouTube ad blocker extention service for pi-hole
 
 [Service]
 ExecStart=/opt/ytblocker/ytblocker
